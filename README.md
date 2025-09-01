@@ -52,4 +52,70 @@ Roll the die, add to your turn score, but **roll a 1 and you lose it all**. Hold
 ---
 
 ## 🗂️ Project Structure
+├─ index.html # Markup and control buttons
+├─ style.css # Layout, active/highlight styles, responsive rules
+├─ script.js # Game state, handlers, DOM updates
+└─ assets/
+└─ dice-1..6.png # Dice images
+
+---
+
+## 🕹️ How to Play
+
+1. **Roll**: Click **Roll Dice** to add to your turn score.
+2. **Risk**: If you roll a **1**, you lose your **turn score** and it’s the other player’s turn.
+3. **Hold**: Click **Hold** to bank your turn score into your total and pass the turn.
+4. **Win**: First player to **100** points wins.
+
+---
+
+## ▶️ Run Locally
+
+**Option A (quick):**
+- Open `index.html` in a browser.
+
+**Option B (Live Server):**
+- Use the VS Code **Live Server** extension → right-click `index.html` → **Open with Live Server**.
+
+---
+
+## 🧪 Manual Test Checklist
+
+- [ ] Dice updates visually on every roll  
+- [ ] Current score resets to `0` when a `1` appears  
+- [ ] **Hold** transfers current → total, then switches player  
+- [ ] **New Game** resets both players & UI highlights  
+- [ ] Buttons ignore input after win state  
+
+---
+
+## 🛠️ Possible Enhancements
+
+- [ ] Custom **winning score** input (e.g., play to 50/150)  
+- [ ] **Keyboard controls** (R = roll, H = hold, N = new)  
+- [ ] **Animations** on roll/hold/state changes  
+- [ ] **Two-dice** variant or “lose total on double-1” rule  
+- [ ] **Sound effects** with user-toggle  
+
+---
+
+## 📸 Screenshots
+
+| Gameplay | Win State |
+| --- | --- |
+| <img alt="Gameplay" src="assets/screen-gameplay.png" width="420"> | <img alt="Win" src="assets/screen-win.png" width="420"> |
+
+> Don’t have screenshots yet? Press `PrtSc` / `Cmd+Shift+4`, drop into `assets/`, and update file names above.
+
+---
+
+## 🙌 Acknowledgements
+
+- Built while following **Jonas Schmedtmann’s** JavaScript course project and then customized by me (**Aditya Pant**) to practice clean state handling, UI updates, and responsive layout.
+
+---
+
+## 📄 License
+
+MIT — use, learn, and have fun.
 
